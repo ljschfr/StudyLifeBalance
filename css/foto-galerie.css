@@ -1,0 +1,243 @@
+body
+{
+  /* Grundeinstellungen */
+  font-family: Verdana, Tahoma, Arial, sans-serif;
+  line-height: 140%;
+  margin: 0;
+  color:rgb(87,87,87);
+  background-color:#ffffff;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Seitenlayout */
+div.alles
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.navbar
+{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: right; 
+    margin-right: 50px;
+    background-color:rgba(255, 255, 255, 0.6);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    color:black; 
+}
+.nav-links li
+{
+  margin: 0 30px; 
+}
+a {
+    text-decoration: none; 
+    color:black; 
+}
+nav.navbar a:hover
+{
+ color: #ADD8E6;
+}
+header.galerie {
+  width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("../media/img/galerie_header.jpg");
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+/*oberer Abstand zu Main-Navigation und zum footer*/
+.abstand{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 170px;
+    margin-right:170px; 
+  }
+  .abstand a{
+    color:#ADD8E6;
+    text-decoration:none;
+  }
+  .abstand a:hover{
+    color:#ADD8E6;
+    text-decoration: underline;
+  }
+
+div.section-seitentitel {
+    width: 80%;
+    margin: 60px auto;
+  }
+  div.schrift-seitentitel {
+    text-align: center;
+    font-size: 4vmin;
+    color:grey;
+  }
+  div.schrift-seitentitel h1 {
+    font-size: 6vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    line-height: 1;
+  }
+  div.line-seitentitel {
+    width: 150px;
+    height: 5px;
+    background:#ADD8E6;
+    margin: 10px auto; 
+  }
+  div.schrift-seitentitel h2{
+    font-size: 3vmin;
+    line-height: 1; 
+  }
+  .slide-in {
+    transform: translatex(-100%);
+    transition: transform 1.2s ease-out;
+}
+
+.slide-in-visible {
+    transform: translateX(0);
+}
+
+  .foto-karusell{
+    position: relative;
+    width: 800px;
+    height: 400px;
+  }
+
+.galerie-bild {
+  display: none;
+  position: relative;
+  width: 100%; 
+}
+.galerie-bild.active {
+  display: block;
+}
+
+.galerie-bild img {
+    width: 800px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 2%;
+    position: absolute;
+  }
+
+.buttons span{
+  position: absolute;
+  z-index: 2;
+  top:50%;
+  padding: 10px;
+  font-size: 30px;
+  font-weight:bold;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5%;
+  cursor: pointer;
+}
+span.vor{
+  right: 15px;
+}
+span.zurück{
+  left: 15px;
+}
+span.vor:hover{
+  background-color: rgba(255, 255, 255, 0.8);
+}
+span.zurück:hover{
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.punkt{
+  z-index:3;
+  position:absolute;
+  bottom:5px;
+  left: 50%;
+  transform:translateX(-50%);
+}
+.punkt a{
+  font-size: 30px;
+  color:rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+.punkt a.active {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.punkt a:hover{
+  color:rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+
+.dragndrop {
+  align-content: center;
+  justify-content: center;
+  display: flex;
+}
+#drag-area{
+  width: 400px;
+  height: 200px;
+  background-color: #ffffff;
+  box-shadow: 2px 9px 49px -17px rgba(0,0,0,0.3);
+  text-align: center;
+  padding: 50px; 
+  border-radius: 2%;
+}
+.upload.active{
+ border: 2px solid #ADD8E6;
+}
+.upload{
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  border: 2px dashed #ADD8E6;
+  border-radius: 2%;
+}
+.upload .icon {
+  font-size: 60px;
+  color:#ADD8E6;
+  margin-top: 30px;
+}
+.upload p{
+  font-size: 15px;
+  font-weight:bold;
+
+}
+
+#drag-area img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* Footer für Datenschutz und Impressum */
+footer{
+    position: fixed;
+    bottom: 0; 
+    left: 0;
+    text-align: center; 
+    width: 100%; 
+    background-color: rgba(255, 255, 255, 0.6);
+  } 
+  footer a {
+    color: #ADD8E6;
+    text-decoration:none;
+    margin-right: 10px;
+  }
+  footer a:hover{
+    text-decoration: underline;
+  }

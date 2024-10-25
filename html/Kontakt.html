@@ -1,0 +1,136 @@
+<!DOCTYPE html> 
+<html lang="de">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="author" content="Study-Life-Balance"/>
+        <meta name="description" content="Kontaktaufnahme und Bewertung von Balancer"/>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <title>Kontakt</title>
+        <link rel="stylesheet" href="../css/stylesheet.css" />
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+        <script type="text/JavaScript" src="../js/cookieconsent.js"></script>
+        <script type="text/JavaScript" src="../js/kontaktformular.js"></script>
+        <script type="text/JavaScript" src="../js/InterFaceDesign.js"></script>
+        <script type="text/JavaScript" src="../js/animation.js"></script>
+        
+        <style>
+          #CookieConsent {
+            display: none;
+            background-color:#ffffff; 
+            padding: 10px; 
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            color:rgb(87,87,87);
+          }
+          #Seitenwechsel {
+            display: none;
+            background-color:#ffffff; 
+            padding: 10px; 
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            color:rgb(87,87,87);
+          }
+          .no-close .ui-dialog-titlebar-close {
+          display: none; /* Close-Button ausblenden */
+          }
+
+          .fehler-message {
+            color: red;
+            font-size: 10px;
+            margin-top: 3px;
+            display: block;
+            z-index: 1; 
+            position: absolute;
+        }
+          
+          
+        </style>
+    </head>
+      <body>  
+
+        <div id="CookieConsent">
+         <p>Wir verwenden Cookies um unsere Webseite zu verbessern, personalisierte Inhalte anzuzeigen und Ihnen ein großartiges Webseiten-Erlebnis zu bieten.</p>
+          <form id="cookie-form">
+            <label>
+            <input type="checkbox" name="technisch" id="technisch" checked disabled> Technisch notwendig </br>
+           <span style="font-size: 12px;">Diese Cookies ermöglichen Kernfunktionen und können daher nicht ausgeschaltet werden</span></label> </br>
+            <label>
+              <input type="checkbox" name="UX" id="UX"> User Experience verbessernd </br>
+              <span style="font-size: 12px;">Diese Cookies ermöglichen es der Website, sich die von Ihnen getroffenen Entscheidungen zu merken, um erweiterte Funktionen und eine Personalisierung zu ermöglichen</span></label>
+          </form>
+        </div>
+        
+      <div class="alles">
+        <nav class="navbar">
+          <ul class="nav-links">
+         <li><a class="linktohome" href="home-neu.html">HOME</a></li>
+         <li><a class="linktoüberuns" href="ueberuns.html">ÜBER UNS</a></li>
+         <li><a class="linktoblog" href="blog-section.html">BLOG</a></li>
+         <li><a class="linktogalerie" href="galerie.html">GALERIE</a></li>
+         <li><a class="linktokontakt" href="Kontakt.html">KONTAKT</a></li>
+          </ul>
+        </nav>
+         <header div class="kontakt">
+
+         </header>
+         <div class="section-seitentitel">
+          <div class="schrift-seitentitel">
+            <h1 class="content slide-in" id="slideIn">Kontakt</h1>
+            <div class="line-seitentitel"></div>
+          </div>
+        </div>
+        
+          <div class="abstand">
+           <div class="kontakt-formular">
+             <div class="containerform">
+              <div class="mainform">
+                <div class="contentform">
+                 <h2>Kontaktier Uns!</h2>
+                 <form id="formular" action="mailto:ls264@hdm-stuttgart.de" method="post" onsubmit="return checkForm()">
+                  <input type="text" id="vorname" name="Vorname" placeholder="Gib deinen Namen an" onblur="checkVorname()">
+                  <div class="fehler-message" id="fehler-vorname"></div>
+                  <input type="text" id="nachname" name="Nachname" placeholder="Gib deinen Nachnamen an" onblur="checkNachname()">
+                  <div class="fehler-message" id="fehler-nachname"></div>
+                  <input type="text" id="nummer" name="Nummer" placeholder="Gib deine Nummer an" >
+                  <input type="email" id="eMail" title="Füge ein @ hinzu" name="E-Mail" placeholder="Gib deine E-Mail an" onblur="checkeMail()">
+                  <div class="fehler-message" id="fehler-eMail"></div>
+                  <input type="text" id="adresse" name="Adresse" placeholder="Gib deine Adresse an">
+
+                  <textarea name="message" id="nachricht" placeholder="Deine Nachricht" onblur="checkNachricht()"></textarea>
+                  <div class="fehler-message" id="fehler-nachricht"></div>
+             
+                 <div class="rating-css">
+                   <h3>Lass gerne eine Bewertung da!</h3>
+                    <div class="star-icon">
+                      <input type="radio" name="rating" id="rating1">
+                      <label for="rating1" class="bx bxs-star"></label>
+                      <input type="radio" name="rating" id="rating2">
+                      <label for="rating2" class="bx bxs-star"></label>
+                      <input type="radio" name="rating" id="rating3">
+                      <label for="rating3" class="bx bxs-star"></label>
+                      <input type="radio" name="rating" id="rating4">
+                      <label for="rating4" class="bx bxs-star"></label>
+                      <input type="radio" name="rating" id="rating5">
+                      <label for="rating5" class="bx bxs-star"></label>
+                    </div>
+                 </div>
+
+                 <button type="submit" id="button" class="btn" title="Hier klicken um das Formular abzuschicken">Senden</button>
+               </form>
+
+                 <div class="Seitenwechsel" id="Seitenwechsel">
+                  <p>Möchten Sie fortfahren? Änderungen im Formular werden nicht gespeichert!</p>
+                 </div>
+
+               </div>
+                <div class="form-img">
+                <img src="../media/img/contact-us.jpeg" alt="Mann am Telefon neben einem Kontaktformular">
+                </div>
+
+              </div>
+            </div>
+           </div>
+         </div>
+       <footer class="footer"><a href="Datenschutzerklaerung.html">Datenschutzerklärung</a> <a href="Impressum.html">Impressum</a></footer>
+      </div>
+    </body>
+</html>
