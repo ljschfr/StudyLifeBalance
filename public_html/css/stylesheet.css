@@ -1,0 +1,513 @@
+body
+{
+  /* Grundeinstellungen */
+  font-family: Verdana, Tahoma, Arial, sans-serif;
+  line-height: 140%;
+  margin: 0;
+  color:rgb(87,87,87);
+  background-color:#ffffff;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Seitenlayout */
+div.alles
+{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.navbar
+{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: right; 
+    margin-right: 50px;
+    background-color:rgba(255, 255, 255, 0.6);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    color:black; 
+}
+.nav-links li
+{
+  margin: 0 30px; 
+}
+
+
+header.ueberuns {
+
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("../media/img/ueberuns-background.jpg");
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+header.blogsection{
+
+width: 100%;
+height: 50vh;
+background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("../media/img/blogsection_background.jpeg");
+background-position: bottom;
+background-size: cover;
+display: flex;
+align-items: flex-end;
+justify-content: center;
+}
+
+header.Beitrag-Ich {
+  width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("../media/img/ich_header.jpg");
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+header.Beitrag-Lucija {
+  width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("../media/img/lucija_header.jpeg");
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+header.Beitrag-Lara {
+  width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("../media/img/lara_header.jpeg");
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+header.Beitrag-Elora {
+  width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("../media/img/elora_header.jpg");
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+header.Beitrag-Aleksandra {
+  width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("../media/img/aleksandra_header.jpeg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+header.Beitrag-Maya {
+  width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("../media/img/maya_header.jpeg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+header.kontakt {
+  width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("../media/img/kontakt_background.jpg");
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none; 
+    color:black; 
+}
+nav.navbar a:hover
+{
+ color: #ADD8E6;
+}
+
+/* Überschrift für alle Seiter außer home und kontakt*/
+div.section-seitentitel {
+  width: 80%;
+  margin: 60px auto;
+}
+div.schrift-seitentitel {
+  text-align: center;
+  font-size: 4vmin;
+  color:grey;
+}
+div.schrift-seitentitel h1 {
+  font-size: 6vmin;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  line-height: 1;
+}
+div.line-seitentitel {
+  width: 150px;
+  height: 5px;
+  background:#ADD8E6;
+  margin: 10px auto; 
+}
+div.schrift-seitentitel h2{
+  font-size: 3vmin;
+  line-height: 1; 
+}
+/*Über-Uns Seite*/
+.über-uns_box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff; 
+}
+.über-uns_img{
+  margin-right: 20px;
+  cursor: pointer;
+  transition: all 1.1s; 
+}
+.über-uns_img:hover{
+  transform: scale(1.2);
+}
+.über-uns_img img{
+  width: 120px;
+  height: 120px; 
+  object-fit: cover;
+  border-radius: 50%; 
+}
+.SocialMedia {
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.SocialMedia a {
+  font-size: 40px;
+  margin: 20px;
+}
+.slide-in {
+    transform: translateX(-100%);
+    transition: transform 1.2s ease-out;
+}
+
+.slide-in-visible {
+    transform: translateX(0);
+}
+
+/*Blog-Section*/
+section.blog{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  padding: 40px;
+  margin-top: -40px; 
+}
+div.blog-heading{
+  margin-top: 100px;
+  margin-bottom: 20px;
+  text-align:center;
+}
+div.blog-heading h3{
+  font-size: 2.4em;
+  color: #ADD8E6;
+  font-weight: 600;
+}
+.blog-container{
+  margin-top: 40px;
+  background-color: #ffffff;
+  margin: 20px 0px;
+  display: flex;
+  flex-wrap: wrap; 
+  align-items: center;
+  justify-content: center;
+}
+.blog-box{
+  width:320px;
+  margin: 10px;
+  margin-top: 20px;
+  border-radius: 5%; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.blog .blog-container .blog-box .blog-image{
+  height: 25rem;
+  overflow: hidden;
+  position: relative;
+}
+.blog-img{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.blog-img img{
+  width:300px;
+  height:180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius:  5%; 
+}
+.blog-text{
+  display:flex;
+  flex-direction: column;
+}
+.blog-text .blog-title{
+  font-size: 1.3em;
+  font-weight: 500;
+  color: #272727;
+  text-decoration:none;
+  text-align: center;
+}
+.blog-text .blog-title:hover{
+  color:rgb(87,87,87);
+  text-decoration:underline;
+}
+.blog-text p{
+  color: #272727;
+  font-size: 0.9em;
+  display:-webkit-box;
+  -webkit-line-clamp: 4; /* Zeilen, die bei der Vorschau gelesen werden können*/
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 20px 20px;
+}
+.blog-text a{
+  color:#ADD8E6;
+  text-decoration:none;
+  margin-left: 20px; 
+}
+.blog-text a:hover{
+  color:#ADD8E6;
+  text-decoration:underline; 
+}
+
+/*oberer Abstand zu Main-Navigation und zum footer*/
+.abstand{
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-left: 170px;
+  margin-right:170px; 
+}
+.abstand a{
+  color:#ADD8E6;
+  text-decoration:none;
+}
+.abstand a:hover{
+  color:#ADD8E6;
+  text-decoration: underline;
+}
+/*Button, der zur Blogsection führt*/
+.button-beitrag{
+  background-color:#ADD8E6;
+  border-radius: 20px;
+  padding: 10px;
+  color: #ffffff;
+  font-size:18px; 
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+/*Kontaktformular*/
+.kontakt-formular{
+  position: relative;
+  min-height: 50vh;
+  z-index: 0;
+  padding: 0px;
+  justify-content: center;
+  display: grid;
+  align-items: center;
+}
+.containerform{
+  max-width: 700px;
+  margin-top: 0 auto;
+  border: 2px solid #e8f4f4;
+}
+.kontakt-formular h2{
+  line-height:40px;
+  margin-bottom:5px;
+  font-size: 30px;
+  font-weight:500;
+  color:#ADD8E6;
+  text-align: center;
+}
+.kontakt-formular h3{
+  line-height:30px;
+  font-size: 15px;
+  font-weight: 200;
+}
+.mainform{
+  position:relative;
+  display: flex;
+}
+.contentform{
+  flex-basis: 50%;
+  padding: 2em 2em;
+  box-shadow: 2px 9px 49px -17px rgba(0,0,0,0.1);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.form-img{
+  flex-basis: 50%;
+  background: #f0f4f8;
+  background-size:cover;
+  padding:40px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  align-items: center;
+  display: grid;
+}
+.form-img img{
+  max-width: 100%;
+}
+
+.btn,button,input{
+  border-radius:35px;
+}
+.btn:hover,button:hover{
+  color:#9b9b9b;
+}
+.kontakt-formular form{
+  margin:30px 0;
+}
+.kontakt-formular input,textarea{
+  outline:none;
+  margin-bottom: 15px;
+  font-stretch: 16px;
+  color:#999;
+  padding: 14px 20px;
+  width: 100%;
+  display: inline-block;
+  box-sizing:border-box;
+  border:1px solid #ADD8E6;
+  background:#ffffff;
+}
+
+/* Sterne-Bewertung*/
+.star-icon{
+  color:#ADD8E6;
+  font-size:30px;
+  font-weight:800;
+  text-transform:uppercase;
+  margin-bottom:20px;
+}
+.rating-css input{
+  display:none;
+}
+.rating-css input + label{
+  text-shadow:1px 1px 0 #ADD8E6;
+  cursor: pointer;
+}
+.rating-css input:checked + label ~ label{
+  color: #838383;
+}
+.rating-css label{
+  transition: 0.3s ease;
+}
+
+/*Button zum Absenden des Formulars*/
+.kontakt-formular button{
+  font-size:18px;
+  color:#ffffff;
+  width: 50%;
+  background:#ADD8E6;
+  font-weight:600;
+  padding:14px 15px;
+  border: none; 
+  transition: transform 0.2s ease;
+}
+.kontakt-formular button:active {
+ transform: scale(0.96);
+}
+
+@keyframes schuetteln {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+.schuetteln {
+  animation: schuetteln 0.5s;
+}
+
+/*Accordion: Style-Änderungen des von jQuery UI bereitgstellten CSS-Stils*/
+.ui-accordion .ui-accordion-header {
+  background: none;
+  border: none;
+  border-color: none;
+  color: inherit !important;
+  padding: 0;
+  font-size: inherit !important; 
+  font-family: inherit !important; 
+  font-weight: bold !important;
+  display: flex;
+  align-items: center; 
+}
+
+.ui-accordion .ui-accordion-header .ui-icon {
+  order: 1;
+}
+
+.ui-accordion .ui-accordion-content {
+  margin-top: 20px; 
+  margin-bottom: 20px; 
+  border: none; 
+  padding: 0;
+  font-size: inherit !important; 
+  font-family: inherit !important; 
+}
+
+/* Tooltip*/
+.ui-tooltip {
+  max-width: 200px; 
+  padding: 8px 12px; 
+  background-color: #ffffff;
+  border: 1px solid #ADD8E6;
+  color: rgb(87,87,87); 
+  font-size: 14px; 
+  border-radius: 5%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  z-index: 100; }
+
+/* Footer für Datenschutz und Impressum */
+footer{
+  position: fixed;
+  bottom: 0; 
+  left: 0;
+  text-align: center; 
+  width: 100%; 
+  background-color: rgba(255, 255, 255, 0.6);
+} 
+footer a {
+  color: #ADD8E6;
+  text-decoration:none;
+  margin-right: 10px;
+}
+footer a:hover{
+  text-decoration: underline;
+}
